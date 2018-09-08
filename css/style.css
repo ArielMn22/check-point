@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    /* font-family: "Myriad Pro"; */
+    font-family: 'Roboto';
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/myriad-pro-8.otf");
+}
+
+.top-bar {
+    background-color: #FF8C1B;
+    justify-content: flex-end;
+    height: 56px;
+}
+
+.top-bar ul {
+    margin-right: 20px;
+
+    flex: 1;
+    justify-content: space-around;
+    max-width: 30vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+.top-bar ul li {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar ul li a {
+    color: #EDEDED;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 30px;
+}
+
+.top-bar ul li a:hover {
+    background-color: #1DB9DD;
+}
+
+#logoRedesSociais {
+    position: absolute;
+    margin-left: 4vw;
+    transform: translateY(-45px);
+
+    text-align: center;
+    z-index: 1;
+}
+
+#logoRedesSociais li {
+    margin: 40px 0;
+}
+
+.logo {
+    background-color: #FF8C1B;
+    width: 140px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.s-net {
+    padding: 12px 20px;
+}
+
+#banner {
+    flex-direction: column;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/bg-1.jpg");
+}
+
+.content {
+    width: 800px;
+    flex: 1;
+    margin-top: 250px;
+    margin-right: 31.25vw; /*600px*/
+}
+
+.content h2 {
+    transform: translateY(-30px);
+}
+
+.content h3 {
+    font-size: 3em;
+    color: #1DB9DD;
+    font-family: 'Agency FB';
+}
+
+#benefits {
+    background-color: #262626;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits-content {
+    justify-content: space-around;
+}
+
+.benefits-content p {
+    flex: 4;
+}
+
+.benefits-content .benefits-content-img {
+    flex: 4;
+    text-align: center;
+}
+
+#funcs {
+    background-color: #262626;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.func-img {
+    background-image: url("../img/func.png");
+    background-repeat: no-repeat;
+    /* padding: 281px 598px; */
+    width: 63%;
+}
+
+.func-item {
+    height: 555px;
+    display: flex;
+    margin-left: 25px;
+    padding: 50px 0;
+}
+
+.up {
+    align-items: flex-start;
+}
+
+.down {
+    align-items: flex-end;
+}
+
+#planos  {
+    background-color: #262626;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+#planos h2.text-border, h3.text-border {
+    font-family: 'Agency FB';
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/* Estilizando tabela */
+#plansTable {
+    width: 60%;
+    color: #EDEDED;
+}
+
+/* #plansTable th,td {
+    border: 1px solid white;
+} */
+
+#plansTable th {
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+#plansTable td {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.5em;
+}
+
+.little-one {
+    width: 310px;
+}
+
+#rodape {
+    background-color: #FF8C1B;
+    width: 100%;
+    height: 40vh;
+
+    justify-content: space-around;
+}
+
+.rodape-img {
+    flex: 1;
+}
+
+
+.contato-ferramentas {
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.contato-ferramentas img {
+   height: 100px;
+}
+
+.rodape-item {
+    flex: 1;
+}
+
+.rodape-item li {
+    padding-top: 25px;
+}
+
+.rodape-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Margens e Paddings */
+
+.ma-top-gg {
+    /* margin-top: 180px; */
+    margin-top: 16.666666666666664vh;
+}
+
+.ma-top-g {
+    margin-top: 40px;
+}
+
+.pa-all-gg {
+    padding: 100px;
+}
+
+.pa-all-g {
+    padding: 40px;
+}
+
+/* Estilizando tipografia */
+
+h1 {
+    font-family: 'Agency FB';
+    color: #FF8C1B;
+    font-size: 14em;
+}
+
+h2 {
+    color: #EDEDED;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Agency FB';
+}
+
+p {
+    color: #EDEDED;
+    font-size: 1.3em;
+}
+
+/* Estilizacoes */
+.fb-icon {
+    background-image: url("../img/facebook-icon.png");
+    background-repeat: none;
+    background-size: cover;
+}
+
+.insta-icon {
+    background-image: url("../img/instagram-icon.png");
+    background-repeat: none;
+    background-size: cover;
+}
+
+.tw-icon {
+    background-image: url("../img/twitter-icon.png");
+    background-repeat: none;
+    background-size: cover;
+}
+
+.orange {
+    color: #FF8C1B;
+}
+
+.text-border {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.right {
+    text-align: right;
+}
+
+.section-break {
+    width: 100%;
+    height: 28px;
+    background-color: #FF8C1B;
+    /* position: absolute; */
+    bottom: 0;
+}
