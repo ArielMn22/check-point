@@ -5,6 +5,7 @@
     font-size: 14px;
     /* font-family: "Myriad Pro"; */
     font-family: 'Roboto';
+    font-weight: 300;
 }
 
 @font-face {
@@ -297,6 +298,16 @@ p {
 .right {
     text-align: right;
 }
+
+.regular {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+
 
 .section-break {
     width: 100%;
