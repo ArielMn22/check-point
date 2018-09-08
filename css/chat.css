@@ -10,6 +10,7 @@
     bottom: 32px;
     right: 0;
     border: 1px solid black;
+    z-index: 1;
 }
 
 #chat header {
@@ -19,6 +20,11 @@
 
     padding-left: .2rem;
     padding-top: .2rem;
+}
+
+#chat header:hover {
+    background-color: #424242;
+    transition: background-color 0.3s;
 }
 
 #chat .perfil {
@@ -115,3 +121,30 @@
 #chat form textarea {
     width: 100%;
 }
+
+/* Botão */
+
+#chatBtn {
+    width: 400px;
+    height: 45px;
+    background-color: #027894;
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    font-size: 2em;
+    color: orange;
+    border: 1px solid black;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#chatBtn:hover {
+    background-color: #0088aa;
+    transition: background-color 0.3s;
+}
+
+.hide {
+    display: none;
+}
+

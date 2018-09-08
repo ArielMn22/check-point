@@ -232,71 +232,76 @@
 
         <!-- Chat -->
 
-        <div id="chat">
-                <header>
-                    <nav class="flex-container">
-                        <div class="perfil flex-container">
-                            <div class="perfil-img">
-                                <img src="img/picture.jpg" alt="Ariel Paixão dos Santos foto.">
-                            </div>
-                            <div class="perfil-dados">
-                                <span class="perfil-nome">Ariel Paixão dos Santos</span>
-                                <span class="perfil-status">Online</span>
-                            </div>
+        <div id="chat" class="hide">
+            <header id="chatHeader">
+                <nav class="flex-container">
+                    <div class="perfil flex-container">
+                        <div class="perfil-img">
+                            <img src="img/picture.jpg" alt="Ariel Paixão dos Santos foto.">
                         </div>
-                        <!-- Fim do Perfil -->
-        
-                        <div class="acoes flex-container">
-                            <a href="#">
-                                <i class="fas fa-search"></i>
-                            </a>
-        
-                            <a href="#">
-                                <i class="fas fa-paperclip"></i>
-                            </a>
+                        <div class="perfil-dados">
+                            <span class="perfil-nome">Ariel Paixão dos Santos</span>
+                            <span class="perfil-status">Online</span>
                         </div>
-                    </nav>
-                </header>
-        
-                <main class="flex-container">
-                    <div class="chat-msg chat-msg-enviada">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam, officia dolorum quas excepturi
-                            dicta corrupti facilis voluptatum ex eaque consequatur porro reprehenderit quidem, odit beatae deleniti
-                            dignissimos tempora consectetur.</p>
-                        <span class="chat-msg-horario">16:20h</span>
                     </div>
-        
-                    <div class="chat-msg chat-msg-recebida">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam, officia dolorum quas excepturi
-                            dicta corrupti facilis voluptatum ex eaque consequatur porro reprehenderit quidem, odit beatae deleniti
-                            dignissimos tempora consectetur.</p>
-                        <span class="chat-msg-horario">16:21h</span>
+                    <!-- Fim do Perfil -->
+
+                    <div class="acoes flex-container">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fas fa-paperclip"></i>
+                        </a>
                     </div>
-        
-                    <div class="chat-msg chat-msg-enviada">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam, officia dolorum quas excepturi
-                            dicta corrupti facilis voluptatum ex eaque consequatur porro reprehenderit quidem, odit beatae deleniti
-                            dignissimos tempora consectetur.</p>
-                        <span class="chat-msg-horario">16:22h</span>
-                    </div>
-        
-                    <div class="chat-msg chat-msg-recebida">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam, officia dolorum quas excepturi
-                            dicta corrupti facilis voluptatum ex eaque consequatur porro reprehenderit quidem, odit beatae deleniti
-                            dignissimos tempora consectetur.</p>
-                        <span class="chat-msg-horario">16:23h</span>
-                    </div>
-                </main>
-        
-                <footer class="flex-container">
-                    <i class="far fa-smile-wink"></i>
-                    <form class="mensagem">
-                        <textarea style="resize: none;"></textarea>
-                    </form>
-                    <i class="fas fa-microphone"></i>
-                </footer>
-            </div>
+                </nav>
+            </header>
+
+            <main class="flex-container">
+                <div class="chat-msg chat-msg-enviada">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam, officia dolorum quas excepturi
+                        dicta corrupti facilis voluptatum ex eaque consequatur porro reprehenderit quidem, odit beatae deleniti
+                        dignissimos tempora consectetur.</p>
+                    <span class="chat-msg-horario">16:20h</span>
+                </div>
+
+                <div class="chat-msg chat-msg-recebida">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam, officia dolorum quas excepturi
+                        dicta corrupti facilis voluptatum ex eaque consequatur porro reprehenderit quidem, odit beatae deleniti
+                        dignissimos tempora consectetur.</p>
+                    <span class="chat-msg-horario">16:21h</span>
+                </div>
+
+                <div class="chat-msg chat-msg-enviada">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam, officia dolorum quas excepturi
+                        dicta corrupti facilis voluptatum ex eaque consequatur porro reprehenderit quidem, odit beatae deleniti
+                        dignissimos tempora consectetur.</p>
+                    <span class="chat-msg-horario">16:22h</span>
+                </div>
+
+                <div class="chat-msg chat-msg-recebida">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam, officia dolorum quas excepturi
+                        dicta corrupti facilis voluptatum ex eaque consequatur porro reprehenderit quidem, odit beatae deleniti
+                        dignissimos tempora consectetur.</p>
+                    <span class="chat-msg-horario">16:23h</span>
+                </div>
+            </main>
+
+            <footer class="flex-container">
+                <i class="far fa-smile-wink"></i>
+                <form class="mensagem">
+                    <textarea style="resize: none;"></textarea>
+                </form>
+                <i class="fas fa-microphone"></i>
+            </footer>
+        </div>
+
+        <!-- Chat-Botão -->
+        <div id="chatBtn" class="flex-container">Alguma dúvida?</div>
     </footer>
+
+    <script src="js/chat.js"></script>
 </body>
 
 </html>

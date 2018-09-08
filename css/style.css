@@ -46,6 +46,7 @@ li {
 
 .top-bar ul li a:hover {
     background-color: #1DB9DD;
+    transition: 0.3s;
 }
 
 #logoRedesSociais {
@@ -55,10 +56,21 @@ li {
 
     text-align: center;
     z-index: 1;
+
+    perspective: 100px;
 }
 
 #logoRedesSociais li {
     margin: 40px 0;
+}
+
+#logoRedesSociais li:hover {
+    transform:  rotateY(360deg);
+    transition: transform 0.5s;
+}
+
+#logoRedesSociais li:not(:hover) {
+    transition: transform 0.5s;
 }
 
 .logo {
@@ -111,6 +123,7 @@ li {
 
 .benefits-content {
     justify-content: space-around;
+    max-width: 1200px;
 }
 
 .benefits-content p {
@@ -307,12 +320,15 @@ p {
     font-weight: 600;
 }
 
-
-
 .section-break {
     width: 100%;
     height: 28px;
     background-color: #FF8C1B;
     /* position: absolute; */
     bottom: 0;
+}
+
+/* js */
+.hide {
+    display: none;
 }
