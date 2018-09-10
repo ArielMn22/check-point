@@ -9,8 +9,38 @@
 }
 
 @font-face {
+    font-family: 'Agency FB Bold';
+    src: url("../fonts/AGENCYB.TTF");
+}
+
+@font-face {
+    font-family: 'Agency FB Regular';
+    src: url("../fonts/AGENCYR.TTF");
+}
+
+@font-face {
     font-family: "Myriad Pro";
     src: url("../fonts/myriad-pro-8.otf");
+}
+
+#headerTopBar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+/* Sided logo e redes sociais */
+.small-width {
+    width: 90px !important;
+}
+
+.small-height {
+    height: 73px !important;
+}
+
+.trans-scl {
+    transform: scale(0.5) !important;
 }
 
 .top-bar {
@@ -100,7 +130,7 @@ li {
 .content {
     width: 800px;
     flex: 1;
-    margin-top: 250px;
+    margin-top: 23.148148148148145vh; /* 250px */
     margin-right: 31.25vw; /*600px*/
 }
 
@@ -331,4 +361,8 @@ p {
 /* js */
 .hide {
     display: none;
+}
+
+.transition-class {
+    transition: all 0.3s;
 }
