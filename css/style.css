@@ -99,7 +99,7 @@ li {
 #logoRedesSociais {
     position: absolute;
     margin-left: 4vw;
-    transform: translateY(-45px);
+    transform: translateY(15px);
 
     text-align: center;
     z-index: 1;
@@ -473,15 +473,25 @@ p {
 @media screen and (max-width: 910px) {
     #menuBtn {
         display: unset;
+        /* position: absolute;
+        z-index: 999; */
     }
 
     #headerTopBar {
         text-align: right;
     }
 
-    #logoRedesSociais {
-        transform: unset;
+    .top-bar {
+        height: auto;
+        width: 25%;
+        margin-left: 75%;
+    }
 
+    .top-bar ul {
+        flex-direction: column;
+    }
+
+    #logoRedesSociais {
         display: flex;
         align-items: center;
     }
@@ -506,5 +516,17 @@ p {
 
     .s-net {
         padding: 14px 21px;
+    }
+
+    .func-img {
+        width: 90%;
+    }
+
+    .func-item {
+        max-height: 360px;
+    }
+
+    #plansTable {
+        width: 125%;
     }
 }
