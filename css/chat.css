@@ -144,7 +144,7 @@
     transition: background-color 0.3s;
 }
 
-.hide {
+.chat-hide {
     display: none;
 }
 

@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
-    /* font-family: "Myriad Pro"; */
     font-family: 'Roboto';
     font-weight: 300;
 }
@@ -89,6 +88,8 @@ li {
     text-transform: uppercase;
     text-decoration: none;
     padding: 18px 30px;
+    width: 100%;
+    text-align: center;
 }
 
 .top-bar ul li a:hover {
@@ -109,6 +110,10 @@ li {
 
 #logoRedesSociais li {
     margin: 40px 0;
+}
+
+#menuBtn {
+    font-size: 3em;
 }
 
 #logoRedesSociais li:hover {
@@ -143,7 +148,8 @@ li {
     flex-direction: column;
     align-items: center;
     
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
     background-image: url("../img/bg-1.jpg");
 }
@@ -261,7 +267,8 @@ li {
 #rodape {
     background-color: #FF8C1B;
     width: 100%;
-    height: 40vh;
+    min-height: 40vh;
+    height: auto;
 
     justify-content: space-around;
 }
@@ -279,6 +286,16 @@ li {
 
 .contato-ferramentas img {
    height: 100px;
+}
+
+.ferramentas {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 360px;
+
+    justify-content: space-around;
+    flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .rodape-item {
@@ -383,9 +400,6 @@ p {
 }
 
 /* js */
-.hide {
-    display: none;
-}
 
 .transition-class {
     transition: all 0.3s;
@@ -393,7 +407,7 @@ p {
 
 /* Responsividade */
 
-@media screen and (max-width: 1665px) {
+@media screen and (max-width: 1665px) { /* Small Desktop Monitors */
     .content {
         margin-right: 20.25vw;
     }
@@ -470,25 +484,38 @@ p {
     }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 910px) { /* Tablets */
+    
+    .hide {
+        display: none;
+    }
+
     #menuBtn {
         display: unset;
-        /* position: absolute;
-        z-index: 999; */
     }
 
     #headerTopBar {
         text-align: right;
     }
 
+    .logo {
+        padding-top: 10px;
+        border: 1px solid black;
+    }
+
     .top-bar {
-        height: auto;
-        width: 25%;
-        margin-left: 75%;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(255,140,27, 0.9);
     }
 
     .top-bar ul {
         flex-direction: column;
+        padding-top: 40vh;
+    }
+
+    .top-bar ul li a:hover {
+        border-radius: 10px;
     }
 
     #logoRedesSociais {
@@ -500,9 +527,13 @@ p {
         margin: 0 15px;
     }
 
+    #logoRedesSociais li:hover {
+        transform: unset;
+    }
+
     .redes-sociais ul {
         display: flex;
-        
+        align-items: center;
     }
 
     .redes-sociais li {
@@ -528,5 +559,115 @@ p {
 
     #plansTable {
         width: 125%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 5.3em;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .small-height {
+        height: 54px !important;
+    }
+
+    .small-width {
+        width: 64px !important;
+    }
+
+    .s-net {
+        padding: 12px 21px;
+    }
+
+    .content {
+        margin-top: 27vh;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content h3 {
+        font-size: 2em;
+    }
+
+    .content h2 {
+        transform: unset;
+        text-align: center;
+    }
+
+    .content p {
+        margin-top: 20px;
+    }
+
+    .pa-all-gg {
+        padding: 40px;
+    }
+
+    .benefits-content {
+        flex-direction: column-reverse;
+    }
+
+    .benefits-content-img img {
+        height: 100px;
+        margin-bottom: 40px;
+    }
+
+    .func-img {
+        background: unset;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .func-item {
+        margin-bottom: 20px;
+    }
+
+    .down, .up {
+        align-items: unset;
+    }
+
+    #plansTable {
+        min-width: 65px;
+    }
+
+    #plansTable th {
+        font-size: 1em;
+        min-width: 65px;
+    }
+
+    #plansTable  td {
+        font-size: 1em;
+    }
+
+    #planos h2.text-border, h3.text-border {
+        font-size: 2em;
+    }
+
+    #rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #rodape .contato h2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .rodape-item {
+        margin-top: 40px;
+        min-width: 77%;
+        width: auto;
+    }
+
+    .rodape-item > * {
+        text-align: center;
+        margin-top: 10px;
     }
 }
