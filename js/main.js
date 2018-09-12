@@ -26,3 +26,18 @@ menu_btn.onclick = function() {
     menu.classList.toggle("hide");
     // redes.classList.toggle("hide");
 }
+
+// Alerts - Social medias accounts
+
+function facebook_click()
+{
+    alert("Agora você seria redirecionado para a página do Facebook do Carfel.");
+}
+
+function twitter_click() {
+    alert("Agora você seria redirecionado para a página do Twitter do Carfel.");
+}
+
+function instagram_click() {
+    alert("Agora você seria redirecionado para a página do Instagram do Carfel.");
+}

@@ -13,14 +13,14 @@
 }
 
 @font-face {
-    font-family: 'Agency FB Regular';
+    font-family: 'Agency FB';
     src: url("../fonts/AGENCYR.TTF");
 }
 
-@font-face {
+/* @font-face {
     font-family: "Myriad Pro";
     src: url("../fonts/myriad-pro-8.otf");
-}
+} */
 
 @font-face {
     font-family: 'Roboto';
@@ -92,7 +92,7 @@ li {
     font-size: 1.2em;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 18px 30px;
+    padding: 17px 30px;
     width: 100%;
     text-align: center;
 }
@@ -239,7 +239,7 @@ li {
 }
 
 #planos h2.text-border, h3.text-border {
-    font-family: 'Agency FB';
+    font-family: 'Agency FB Bold';
     font-size: 3em;
     font-weight: 700;
 }
@@ -339,7 +339,7 @@ li {
 /* Estilizando tipografia */
 
 h1 {
-    font-family: 'Agency FB';
+    font-family: 'Agency FB Bold';
     color: #FF8C1B;
     font-size: 14em;
 }
@@ -386,6 +386,10 @@ p {
 
 .right {
     text-align: right;
+}
+
+.center {
+    text-align: center;
 }
 
 .regular {
