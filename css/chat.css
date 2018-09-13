@@ -144,6 +144,7 @@
     font-size: 1.5em;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(145, 46, 0);
+    transform: translateY(3px);
 }
 
 #chatBtn:hover {

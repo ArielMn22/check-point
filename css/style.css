@@ -5,6 +5,7 @@
     font-size: 14px;
     font-family: 'Roboto';
     font-weight: 300;
+    outline: none;
 }
 
 @font-face {
@@ -403,6 +404,24 @@ p {
     bottom: 0;
 }
 
+.copyright {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 56px;
+    height: auto;
+    flex-wrap: wrap;
+
+    color: white;
+}
+
+.copyright span {
+    font-size: 1.5em;
+}
+
+
+
 /* js */
 
 .transition-class {
@@ -703,6 +722,14 @@ p {
     .rodape-item > * {
         text-align: center;
         margin-top: 10px;
+    }
+
+    .copyright {
+        flex-direction: column;
+    }
+
+    .copyright span {
+        font-size: 1.1em;
     }
 }
 

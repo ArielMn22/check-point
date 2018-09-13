@@ -80,6 +80,10 @@
     .fund-item {
         margin-bottom: 40px;
     }
+
+    .pictures-item img:hover {
+        transform: unset;
+    }
 }
 
 @media screen and (max-width: 700px) {
