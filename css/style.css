@@ -17,11 +17,6 @@
     src: url("../fonts/AGENCYR.TTF");
 }
 
-/* @font-face {
-    font-family: "Myriad Pro";
-    src: url("../fonts/myriad-pro-8.otf");
-} */
-
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Medium.ttf");
@@ -29,7 +24,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url("../fonts/Roboto-Light.ttf")
+    src: url("../fonts/Roboto-Light.ttf");
 }
 
 #headerTopBar {
@@ -266,7 +261,7 @@ li {
 }
 
 .little-one {
-    width: 310px;
+    width: 32%;
 }
 
 #rodape {
@@ -587,14 +582,14 @@ p {
     }
 
     #plansTable {
-        width: 125%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 700px) {
 
-    #chat, #chatBtn {
-        display: none;
+    .top-bar {
+        z-index: 3;
     }
 
     #menuBtn {
@@ -678,7 +673,7 @@ p {
 
     #plansTable th {
         font-size: 1em;
-        min-width: 65px;
+        /* min-width: 65px; */
     }
 
     #plansTable  td {
