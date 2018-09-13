@@ -593,6 +593,10 @@ p {
 
 @media screen and (max-width: 700px) {
 
+    #chat, #chatBtn {
+        display: none;
+    }
+
     #menuBtn {
         right: 0;
         top: 28px;

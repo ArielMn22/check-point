@@ -33,9 +33,10 @@
 }
 
 .pictures-item img:hover {
-    transform: scale(1.2) rotate(20deg);
+    transform: scale(1.2) rotate(360deg);
     box-shadow: 2px 2px 14px rgb(73, 73, 73);
     transition: all 0.3s;
+    border-radius: 20px;
 }
 
 #fundadores {

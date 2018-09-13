@@ -95,5 +95,12 @@
     
     #contatoForm form textarea {
         width: 90%;
+        height: 15.277777777777777vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contato-top-item span {
+        font-size: 1.5em;
     }
 }
