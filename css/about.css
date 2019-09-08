@@ -72,6 +72,10 @@
     border: 2px solid #FF8C1B
 }
 
+p {
+    text-align: justify;
+}
+
 @media screen and (max-width: 900px) {
     #fundadores > * {
         margin-bottom: 40px;
